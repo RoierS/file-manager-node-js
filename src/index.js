@@ -38,7 +38,7 @@ const startApp = async () => {
 
       console.log(currentWorkingDirectoryMessage(currWorkingDirectory));
     } catch (err) {
-      console.log(err.message);
+      console.error(err.message);
     }
   }
 };

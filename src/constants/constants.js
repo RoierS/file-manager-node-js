@@ -1,5 +1,5 @@
 export const goodbyeMessage = (userName) =>
-  `Thank you for using File Manager, ${userName}, goodbye!`;
+  `\nThank you for using File Manager, ${userName}, goodbye!`;
 
 export const welcomeMessage = (userName) =>
   `Welcome to File Manager, ${userName}!`;
