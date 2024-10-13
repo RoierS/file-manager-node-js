@@ -5,7 +5,10 @@ import {
   welcomeMessage,
   currentWorkingDirectoryMessage,
 } from "./constants/constants.js";
+import { handleUserCommand } from "./commands/handleUserCommand.js";
+
 import os from "node:os";
+
 const userName = getUserName();
 
 console.log(welcomeMessage(userName));
@@ -28,6 +31,11 @@ const startApp = async () => {
     }
 
     try {
+      currWorkingDirectory = await handleUserCommand(
+        userCommand,
+        currWorkingDirectory,
+      );
+
       console.log(currentWorkingDirectoryMessage(currWorkingDirectory));
     } catch (err) {
       console.log(err.message);

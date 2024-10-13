@@ -6,3 +6,20 @@ export const welcomeMessage = (userName) =>
 
 export const currentWorkingDirectoryMessage = (currWorkingDirectory) =>
   `You are currently in ${currWorkingDirectory}`;
+
+export const INVALID_INPUT_ERROR_MESSAGE = "Invalid input";
+
+export const FILE_MANAGER_COMMAND = {
+  UP: "up",
+  CD: "cd",
+  LS: "ls",
+  CAT: "cat",
+  RN: "rn",
+  CP: "cp",
+  MV: "mv",
+  RM: "rm",
+  OS: "os",
+  HASH: "hash",
+  COMPRESS: "compress",
+  DECOMPRESS: "decompress",
+};
