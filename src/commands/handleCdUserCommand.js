@@ -2,7 +2,11 @@ import { stat } from "fs/promises";
 import path from "path";
 import { OPERATION_FAILED_MESSAGE } from "../constants/constants.js";
 
-export const handleCdUserCommand = async (currentDirectory, newDirectory) => {
+export const handleCdUserCommand = async (currentDirectory, rest) => {
+  console.log(rest);
+  console.log(Array.isArray(rest));
+  const newDirectory = rest.join(" ");
+
   const resultDirectory = path.isAbsolute(newDirectory)
     ? newDirectory
     : path.resolve(currentDirectory, newDirectory);

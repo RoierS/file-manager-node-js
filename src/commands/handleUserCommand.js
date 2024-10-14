@@ -12,5 +12,5 @@ export const handleUserCommand = async (command, currentDirectory) => {
     return currentDirectory;
   }
 
-  return handleCommand(currentDirectory, ...rest);
+  return handleCommand(currentDirectory, rest);
 };
