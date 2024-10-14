@@ -14,8 +14,6 @@ export const handleCpUserCommand = async (currentDirectory, rest) => {
 
   const srcFilePath = cleanedArgs[0];
   const dstDirectoryPath = cleanedArgs[1];
-  console.log(srcFilePath);
-  console.log(dstDirectoryPath);
 
   const dstFilePath = path.join(dstDirectoryPath, path.basename(srcFilePath));
 
