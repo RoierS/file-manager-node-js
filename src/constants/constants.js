@@ -28,3 +28,5 @@ export const FILE_MANAGER_COMMAND = {
   COMPRESS: "compress",
   DECOMPRESS: "decompress",
 };
+
+export const REGEX = /"([^"]+)"|(\S+)/g;
