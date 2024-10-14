@@ -17,7 +17,10 @@ export const handleCompressUserCommand = async (currentDirectory, rest) => {
   const dstDirectoryPath = cleanedArgs[1];
   const parsedPath = path.parse(srcFilePath);
 
-  const dstFilePath = path.join(dstDirectoryPath, parsedPath.name + ".br");
+  const dstFilePath = path.join(
+    dstDirectoryPath,
+    parsedPath.name + parsedPath.ext + ".br",
+  );
 
   try {
     await fs.access(srcFilePath);
@@ -49,9 +52,11 @@ export const handleCompressUserCommand = async (currentDirectory, rest) => {
 
       readStream.on("open", () => console.log(START_COMPRESSING_MESSAGE));
 
-      brotliStream.on("error", (error) => reject(error));
+      brotliStream.on("error", (error) => rej(error));
 
       readStream.on("error", (error) => rej(error));
+
+      writeStream.on("error", (error) => rej(error));
 
       writeStream.on("finish", () => {
         console.log(FINISH_MESSAGE);
