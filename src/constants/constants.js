@@ -18,6 +18,7 @@ export const FILE_MANAGER_COMMAND = {
   CD: "cd",
   LS: "ls",
   CAT: "cat",
+  ADD: "add",
   RN: "rn",
   CP: "cp",
   MV: "mv",

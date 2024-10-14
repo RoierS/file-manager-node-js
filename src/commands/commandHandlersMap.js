@@ -2,6 +2,7 @@ import { handleUpUserCommand } from "./handleUpUserCommand.js";
 import { handleCdUserCommand } from "./handleCdUserCommand.js";
 import { handleLsUserCommand } from "./handleLsUserCommand.js";
 import { handleCatUserCommand } from "./handleCatUserCommand.js";
+import { handleAddUserCommand } from "./handleAddUserCommand.js";
 import { handleRnUserCommand } from "./handleRnUserCommand.js";
 import { handleCpUserCommand } from "./handleCpUserCommand.js";
 import { handleMvUserCommand } from "./handleMvUserCommand.js";
@@ -17,6 +18,7 @@ export const commandHandlers = {
   [FILE_MANAGER_COMMAND.CD]: handleCdUserCommand,
   [FILE_MANAGER_COMMAND.LS]: handleLsUserCommand,
   [FILE_MANAGER_COMMAND.CAT]: handleCatUserCommand,
+  [FILE_MANAGER_COMMAND.ADD]: handleAddUserCommand,
   [FILE_MANAGER_COMMAND.RN]: handleRnUserCommand,
   [FILE_MANAGER_COMMAND.CP]: handleCpUserCommand,
   [FILE_MANAGER_COMMAND.MV]: handleMvUserCommand,
