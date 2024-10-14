@@ -20,6 +20,8 @@ export const FINISH_MESSAGE = `\x1b[42mFinished! \x1b[0m`;
 export const DELETED_MESSAGE = `\x1b[42m File deleted successfully! \x1b[0m`;
 export const HASH_MESSAGE = `\x1b[42m Hash:\x1b[0m`;
 
+export const START_COMPRESSING_MESSAGE = `\x1b[42m Start compressing... \x1b[0m`;
+
 export const FILE_MANAGER_COMMAND = {
   UP: "up",
   CD: "cd",
