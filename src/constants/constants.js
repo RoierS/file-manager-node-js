@@ -36,3 +36,11 @@ export const FILE_MANAGER_COMMAND = {
 };
 
 export const REGEX = /"([^"]+)"|(\S+)/g;
+
+export const OS_COMMAND = {
+  EOL: "--EOL",
+  CPUS: "--cpus",
+  HOMEDIR: "--homedir",
+  USERNAME: "--username",
+  ARCH: "--architecture",
+};
