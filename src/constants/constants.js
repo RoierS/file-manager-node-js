@@ -9,6 +9,8 @@ export const currentWorkingDirectoryMessage = (currWorkingDirectory) =>
 
 export const INVALID_INPUT_ERROR_MESSAGE = "Invalid input";
 
+export const OPERATION_FAILED_MESSAGE = "Operation failed";
+
 export const FILE_MANAGER_COMMAND = {
   UP: "up",
   CD: "cd",
