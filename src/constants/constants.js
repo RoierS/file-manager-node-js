@@ -17,6 +17,8 @@ export const START_COPYING_MESSAGE = "Start copying...";
 
 export const FINISH_MESSAGE = "Finished!";
 
+export const DELETED_MESSAGE = `\x1b[42m File deleted successfully! \x1b[0m`;
+
 export const FILE_MANAGER_COMMAND = {
   UP: "up",
   CD: "cd",
