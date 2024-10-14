@@ -1,6 +1,6 @@
 import { stat } from "fs/promises";
 import path from "path";
-import { OPERATION_FAILED_MESSAGE } from "../constants/constants";
+import { OPERATION_FAILED_MESSAGE } from "../constants/constants.js";
 
 export const handleCdUserCommand = async (currentDirectory, newDirectory) => {
   const resultDirectory = path.isAbsolute(newDirectory)
